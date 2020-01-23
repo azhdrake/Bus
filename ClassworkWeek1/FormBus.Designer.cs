@@ -1,6 +1,6 @@
 ﻿namespace ClassworkWeek1
 {
-  partial class Form1
+  partial class FormBus
   {
     /// <summary>
     /// Required designer variable.
@@ -38,12 +38,13 @@
       // 
       // CalcButt
       // 
+      this.CalcButt.BackColor = System.Drawing.SystemColors.GrayText;
       this.CalcButt.Location = new System.Drawing.Point(388, 326);
       this.CalcButt.Name = "CalcButt";
       this.CalcButt.Size = new System.Drawing.Size(180, 43);
       this.CalcButt.TabIndex = 0;
       this.CalcButt.Text = "Yes Touchy";
-      this.CalcButt.UseVisualStyleBackColor = true;
+      this.CalcButt.UseVisualStyleBackColor = false;
       this.CalcButt.Click += new System.EventHandler(this.calcButt_Click);
       // 
       // BusTripNumber
@@ -83,27 +84,30 @@
       // 
       // fuckThisShitImOut
       // 
+      this.fuckThisShitImOut.BackColor = System.Drawing.SystemColors.GrayText;
       this.fuckThisShitImOut.Location = new System.Drawing.Point(99, 326);
       this.fuckThisShitImOut.Name = "fuckThisShitImOut";
       this.fuckThisShitImOut.Size = new System.Drawing.Size(162, 42);
       this.fuckThisShitImOut.TabIndex = 5;
       this.fuckThisShitImOut.Text = "I\'m Out!";
-      this.fuckThisShitImOut.UseVisualStyleBackColor = true;
+      this.fuckThisShitImOut.UseVisualStyleBackColor = false;
       this.fuckThisShitImOut.Click += new System.EventHandler(this.fuckThisShitImOut_Click);
       // 
-      // Form1
+      // FormBus
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(800, 450);
+      this.BackColor = System.Drawing.Color.Black;
+      this.ClientSize = new System.Drawing.Size(700, 450);
       this.Controls.Add(this.fuckThisShitImOut);
       this.Controls.Add(this.label2);
       this.Controls.Add(this.label1);
       this.Controls.Add(this.TotalBox);
       this.Controls.Add(this.BusTripNumber);
       this.Controls.Add(this.CalcButt);
-      this.Name = "Form1";
-      this.Text = "Form1";
+      this.ForeColor = System.Drawing.Color.Lime;
+      this.Name = "FormBus";
+      this.Text = "Bus Cost";
       this.ResumeLayout(false);
       this.PerformLayout();
 
