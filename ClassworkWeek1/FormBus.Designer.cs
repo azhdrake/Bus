@@ -39,10 +39,10 @@
       // CalcButt
       // 
       this.CalcButt.BackColor = System.Drawing.SystemColors.GrayText;
-      this.CalcButt.Location = new System.Drawing.Point(388, 326);
+      this.CalcButt.Location = new System.Drawing.Point(99, 326);
       this.CalcButt.Name = "CalcButt";
       this.CalcButt.Size = new System.Drawing.Size(180, 43);
-      this.CalcButt.TabIndex = 0;
+      this.CalcButt.TabIndex = 1;
       this.CalcButt.Text = "Yes Touchy";
       this.CalcButt.UseVisualStyleBackColor = false;
       this.CalcButt.Click += new System.EventHandler(this.calcButt_Click);
@@ -52,7 +52,7 @@
       this.BusTripNumber.Location = new System.Drawing.Point(388, 88);
       this.BusTripNumber.Name = "BusTripNumber";
       this.BusTripNumber.Size = new System.Drawing.Size(180, 31);
-      this.BusTripNumber.TabIndex = 1;
+      this.BusTripNumber.TabIndex = 0;
       this.BusTripNumber.TextChanged += new System.EventHandler(this.BusTripNumber_TextChanged);
       // 
       // TotalBox
@@ -61,7 +61,8 @@
       this.TotalBox.Name = "TotalBox";
       this.TotalBox.ReadOnly = true;
       this.TotalBox.Size = new System.Drawing.Size(180, 31);
-      this.TotalBox.TabIndex = 2;
+      this.TotalBox.TabIndex = 25;
+      this.TotalBox.TabStop = false;
       this.TotalBox.TextChanged += new System.EventHandler(this.TotalBox_TextChanged);
       // 
       // label1
@@ -76,7 +77,7 @@
       // label2
       // 
       this.label2.AutoSize = true;
-      this.label2.Location = new System.Drawing.Point(99, 211);
+      this.label2.Location = new System.Drawing.Point(94, 212);
       this.label2.Name = "label2";
       this.label2.Size = new System.Drawing.Size(122, 25);
       this.label2.TabIndex = 4;
@@ -85,19 +86,22 @@
       // fuckThisShitImOut
       // 
       this.fuckThisShitImOut.BackColor = System.Drawing.SystemColors.GrayText;
-      this.fuckThisShitImOut.Location = new System.Drawing.Point(99, 326);
+      this.fuckThisShitImOut.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+      this.fuckThisShitImOut.Location = new System.Drawing.Point(388, 327);
       this.fuckThisShitImOut.Name = "fuckThisShitImOut";
-      this.fuckThisShitImOut.Size = new System.Drawing.Size(162, 42);
-      this.fuckThisShitImOut.TabIndex = 5;
+      this.fuckThisShitImOut.Size = new System.Drawing.Size(180, 42);
+      this.fuckThisShitImOut.TabIndex = 2;
       this.fuckThisShitImOut.Text = "I\'m Out!";
       this.fuckThisShitImOut.UseVisualStyleBackColor = false;
       this.fuckThisShitImOut.Click += new System.EventHandler(this.fuckThisShitImOut_Click);
       // 
       // FormBus
       // 
+      this.AcceptButton = this.CalcButt;
       this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.Black;
+      this.CancelButton = this.fuckThisShitImOut;
       this.ClientSize = new System.Drawing.Size(700, 450);
       this.Controls.Add(this.fuckThisShitImOut);
       this.Controls.Add(this.label2);
